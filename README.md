@@ -1,7 +1,6 @@
-# docker_rpi3_python_iot_led
-Raspberry Pi 3 IOT Demo using Docker &amp; Python 2.7 to trigger an LED
+# Raspberry Pi 3 IoT Demo using Docker &amp; Python 2.7 to trigger an LED
 
-Dockerfile can be used to build IOT demo container that runs a Python 2.7 application that will work with the GPIO pins configured to match the following setup :
+The Dockerfile in this repo can be used to build an IoT demo container that runs a Python 2.7 application that will work with the GPIO pins configured to match the following setup :
 
 ![rpi3-led_bb](https://user-images.githubusercontent.com/9472095/36993912-600b37ba-20a7-11e8-853b-b725fee25233.png)
 
@@ -9,7 +8,7 @@ Dockerfile can be used to build IOT demo container that runs a Python 2.7 applic
 
 The docker image can be found here: https://hub.docker.com/r/allthingscloud/rpi3-python-iot-led/
 
-To build the dockerfile on a raspberry pi 3 : 
+To build the dockerfile on a raspberry pi 3 after cloning this repository: 
 ```bash
 docker image build --tag allthingscloud/rpi3-python-iot-led -f Dockerfile . 
 ```
@@ -23,6 +22,7 @@ Similiar golang and nodejs docker images can be found in my github repos - https
 
 # Raspberry Pi 3 - Docker Installation
 Please check the official documentation at https://docs.docker.com
+
 I used the following steps :
 
 ```bash
