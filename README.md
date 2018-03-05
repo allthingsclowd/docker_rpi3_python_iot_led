@@ -8,6 +8,8 @@ The Dockerfile in this repo can be used to build an IoT demo container that runs
 
 The docker image can be found here: https://hub.docker.com/r/allthingscloud/rpi3-python-iot-led/
 
+Demo application explained here - https://thepihut.com/blogs/raspberry-pi-tutorials/27968772-turning-on-an-led-with-your-raspberry-pis-gpio-pins
+
 To build the dockerfile on a raspberry pi 3 after cloning this repository: 
 ```bash
 docker image build --tag allthingscloud/rpi3-python-iot-led -f Dockerfile . 
@@ -18,7 +20,7 @@ Launch as follows:
 docker container run -d --name my-python-iot-demo --device /dev/gpiomem allthingscloud/rpi3-python-iot-led
 ```
 
-Similiar golang and nodejs docker images can be found in my github repos - https://github.com/allthingsclowd
+Similar golang and nodejs docker images can be found in my github repos - https://github.com/allthingsclowd
 
 # Raspberry Pi 3 - Docker Installation
 Please check the official documentation at https://docs.docker.com
